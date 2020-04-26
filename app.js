@@ -16,8 +16,6 @@ var session = require('express-session');
 var passport = require('passport');
 
 
-//load customers route
-var customers = require('./routes/customers');
 //load products route
 var products = require('./routes/products');
 //load static_pages routes
@@ -154,12 +152,6 @@ app.get('/faq', staticjsfile.faq);
 //get cookie policy url
 app.get('/cookie_policy', staticjsfile.cpolicy);
 
-app.get('/customers', customers.list);
-app.get('/customers/add', customers.add);
-app.post('/customers/add', customers.save);
-app.get('/customers/delete/:id', customers.delete_customer);
-app.get('/customers/edit/:id', customers.edit);
-app.post('/customers/edit/:id',customers.save_edit);
 //get prd and item
 app.get('/products', products.list);
 app.get('/items/:id', itemjsfile.items);
