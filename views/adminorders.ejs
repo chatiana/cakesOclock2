@@ -9,9 +9,9 @@
         <table>
             <tr>
                 <th>Order ID</th>
+                <th>Customer ID</th>
                 <th>total</th>
                 <th>Paid</th>
-                <th>Customer ID</th>
                 <th>Pick Up Time</th>
                 <th>Shop Name</th>
                 <th>Status</th>
@@ -26,11 +26,11 @@
                     <td><%=data[i].pickup%></td>
                     <td><%=data[i].shopname%></td>
                     <td><%=data[i].status%></td>
-                    <td>
+                <!--    <td>
                        <a class="btn-secondary" href="../adminproducts/edit/<%=data[i].id%>">Edit</a>
                        <a class="btn-secondary" href="../users/delete/<%=data[i].id%>">Delete</a>
                       
-                    </td>
+                    </td>-->
                 </tr>
             <% }
             }else{ %>
