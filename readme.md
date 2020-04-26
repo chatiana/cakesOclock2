@@ -1,4 +1,9 @@
 WebDevAppl - Cakes Oclock eCommerce
+## Git
+https://github.com/chatiana/cakesoclock2 
+
+## Heroku
+https://cakesoclock.herokuapp.com/
 
 ## Configuration
 Platform: node v13.9.0,
